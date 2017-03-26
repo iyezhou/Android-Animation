@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:title="MaterialDesign动画"
+        app:titleTextColor="#FFF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <!--可以修改背景颜色和水波纹的颜色：style.xml-->
+        <!--<item name="android:colorControlHighlight">@color/colorPrimary_pink</item>-->
+        <!--<item name="android:colorButtonNormal">@color/material_blue_grey_800</item>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="矩形水波纹效果"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="圆形水波纹效果"
+            />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="中心点揭露效果"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="左上角揭露效果"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

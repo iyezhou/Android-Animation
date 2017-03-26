@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/first_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/picture2"
+        android:orientation="vertical"
+		>
+	    <Button
+	        android:id="@+id/button"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="显示" 
+	        android:background="#f00"
+			android:textColor="#FFF"
+			android:textSize="16sp"
+	        android:onClick="startFirstAnimation"
+	        />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/second_view"
+        android:src="@drawable/picture1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:onClick="startSecondAnimation"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
