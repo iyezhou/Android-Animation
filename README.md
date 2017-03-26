@@ -1,5 +1,5 @@
 # Android-Animation
-Android 动画总结
+Android动画整理
 
 ## 补间动画BetweenAnimation
 
